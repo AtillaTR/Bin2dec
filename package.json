@@ -1,0 +1,26 @@
+{
+  "name": "Bin2dec",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AtillaTR/Bin2dec.git",
+  "author": "AtillaTR <teixeira.atilla@@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "babel-loader": "^8.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "3"
+  },
+  
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
+}
