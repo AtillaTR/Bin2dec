@@ -5,20 +5,30 @@ function App() {
     const [binaryText, setBinaryText] = useState([]);
     const [decimalText, setDecimalText] = useState([]);
     const [errorMessage, setErrorMessage] = useState([]);
-
+/**
+ * Nao permite o refresh da pagina
+ */
     const onFormSubmit = e => {
         e.preventDefault()
 
+        //Condicao para que se o numero inserido nao for binario uma mensagem de erro sera mostrada
         if (binaryText.match(/^[0-1]+$/g) === null) {
             return(
             setErrorMessage('Use apenas os numeros 0 ou 1'));
             
         }
-        setErrorMessage('')
+        setErrorMessage('')//Reinicia a mensagem de erro caso ativada
 
+
+        /**
+         * Formula para a conversao :
+         *  input = 1 => output = 1* (2^0) = 1
+         *  input = 10 => output = (0* (2^0)) +  (1 * (2^1)) = 2    
+         * Entao nos invertemos e interamos com a parte de tras
+         */
         const reversedBinaryText = binaryText
             .split('')
-            .map(Number)
+            .map(Number)//Converte uma sitring para numero
             .reverse()
 
         const result = reversedBinaryText.reduce(
