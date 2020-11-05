@@ -3,8 +3,8 @@ Bin2dec
 <h1/>
   
  <p align="center">
-  <a href="#Tecnologias">Tecnologias</a>
-  <a href="#Projeto">Projeto</a>
+  <a href="#Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  <p>
     
 ## Tecnologias
