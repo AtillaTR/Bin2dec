@@ -9,11 +9,11 @@ function App() {
     const onFormSubmit = e => {
         e.preventDefault()
 
-        // if (binaryText.match(/^[0-1]+$/g) === null) {
-        //     return(
-        //     setErrorMessage('Use apenas os numeros 0 ou 1'));
+        if (binaryText.match(/^[0-1]+$/g) === null) {
+            return(
+            setErrorMessage('Use apenas os numeros 0 ou 1'));
             
-        // }
+        }
         setErrorMessage('')
 
         const reversedBinaryText = binaryText
